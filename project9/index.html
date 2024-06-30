@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Console Tricks!</title>
+  <link rel="icon" href="https://fav.farm/🔥" />
+</head>
+<body>
+
+  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+  <script>
+    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+
+    function makeGreen() {
+      const p = document.querySelector('p');
+      p.style.color = '#BADA55';
+      p.style.fontSize = '50px';
+    }
+
+    // Regular
+console.log('hello')
+    // Interpolated
+console.log('helo l am a %s string!', '+po')
+    // Styled
+    console.log('%c helo l am a %s string!', 'font-size :30px; color:red;background-color:blue')
+    // warning!
+  console.warn('oh nooo');
+    // Error :|
+    console.error('shit');
+    // Info
+    console.info('eat 3-4 people');
+    // Testing
+   const p =document.querySelector('p');
+   console.assert(p.classList.contains('lena'),'nooo wrong');
+
+    // clearing
+   console.clear();
+   
+
+    // Grouping together
+dogs.forEach(dog =>{
+    console.log(` my name ${dog.name} and my age ${dog.age}`)
+})
+    // counting
+console.count('lena');
+console.count('lena22');
+console.count('lena22');
+console.count('lena');
+console.count('lena11');
+console.count('lena');
+console.count('lena');
+console.count('lena11');
+console.count('lena');
+console.count('lena');
+
+//table
+ console.table(dogs)
+
+  </script>
+</body>
+</html>
